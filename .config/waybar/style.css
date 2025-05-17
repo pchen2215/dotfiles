@@ -1,0 +1,65 @@
+* {
+    font-family: "Cascadia Code", "Symbols Nerd Font";
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: rgba(13, 27, 42, 0.8); /* TODO: match to system palette */
+    color: rgba(228, 228, 239, 1); /* TODO: match to system palette */
+}
+
+#window {
+    margin: 0 10px;
+}
+
+.modules-right:last-child {
+    margin-right: 10px;
+}
+
+.modules-left {
+    padding: 0 0 0 15px;
+}
+
+tooltip {
+    background-color: rgba(13, 27, 42, 1); /* TODO: match to system palette */
+    color: rgba(228, 228, 239, 1); /* TODO: match to system palette */
+    border: 1px solid rgba(255, 206, 126, 1);
+    border-radius: 0px;
+    margin-top: -5px;
+}
+
+#workspaces button {
+    color: rgba(228, 228, 239, 1); /* TODO: match to system palette */
+    border-radius: 0px;
+}
+
+#workspaces button.focused {
+    color: rgba(255, 206, 126, 1);
+}
+
+#workspaces button.active {
+    color: rgba(255, 206, 126, 1);
+    transition: all 150ms ease;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    border-color: rgba(255, 206, 126, 1);
+    box-shadow: none;
+    text-shadow: none;
+    transition: all 150ms ease;
+}
+
+#workspaces button:not(:last-child) {
+    transition: all 150ms ease;
+}
+
+#network,
+#wireplumber,
+#custom-brightness,
+#battery,
+#cpu,
+#memory,
+#clock {
+    padding: 0 10px;
+}
