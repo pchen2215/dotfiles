@@ -23,7 +23,7 @@
 
 [colors.primary]
 background = "0x1D2021"
-foreground = "0xEEEEEE"
+foreground = "0xDDDDDD"
 
 [cursor.style]
 blinking = "Off"
