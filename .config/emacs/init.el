@@ -61,10 +61,10 @@
 				     completion-category-overrides '((file(styles.(partial-completion))))))
 
 ;; set background opacity
-(set-frame-parameter (selected-frame) 'alpha '(80 . 80))
-(add-to-list 'default-frame-alist '(alpha . (80 . 80)))
-(set-frame-parameter nil 'alpha-background 80)
- (add-to-list 'default-frame-alist '(alpha-background . 80))
+(set-frame-parameter (selected-frame) 'alpha '(85 . 85))
+(add-to-list 'default-frame-alist '(alpha . (85 . 85)))
+(set-frame-parameter nil 'alpha-background 85)
+(add-to-list 'default-frame-alist '(alpha-background . 85))
 
 ;; set theme
 (load-theme 'gruvbox-dark-hard t)

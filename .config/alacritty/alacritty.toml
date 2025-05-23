@@ -21,9 +21,9 @@
 # white = "0xcbe3e7"
 # yellow = "0xffe9aa"
 
-# [colors.primary]
-# background = "0x1b182c"
-# foreground = "0xcbe3e7"
+[colors.primary]
+background = "0x1D2021"
+foreground = "0xEEEEEE"
 
 [cursor.style]
 blinking = "Off"
@@ -96,7 +96,7 @@ decorations = "full"
 decorations_theme_variant = "None"
 dynamic_padding = false
 dynamic_title = true
-opacity = 0.8
+opacity = 0.85
 resize_increments = false
 startup_mode = "Windowed"
 title = "Alacritty"
