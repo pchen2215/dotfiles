@@ -70,5 +70,5 @@
 (load-theme 'gruvbox-dark-hard t)
 
 ;; set font
-(set-frame-font "Cascadia Code" nil t)
-
+(set-frame-font "Cascadia Code " nil t)
+(set-face-attribute 'default nil :height 212)
