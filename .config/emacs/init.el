@@ -7,8 +7,7 @@
 (package-initialize)
 
 ;; update packages list if we are on a new install
-(unless package-archive-contents
-  (package-refresh-contents))
+(unless package-archive-contents (package-refresh-contents))
 
 (setq my-package-list '(use-package
 			no-littering
@@ -31,7 +30,7 @@
 
 ;; menus/ui
 (setq inhibit-startup-screen t)
-;; (global-display-line-numbers-mode t)
+(column-number-mode 1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -52,13 +51,14 @@
   :custom (vertico-count 15)
   :bind (:map vertico-map
         ("C-n". vertico-next)
-        ("C-p". vertico-previous) )
-  :init (vertico-mode t) )
+        ("C-p". vertico-previous))
+  :init (vertico-mode t))
 
 ;; orderless config
-(use-package orderless :config (setq completion-styles '(orderless partial-completion basic)
-				     completion-category-defaults nil
-				     completion-category-overrides '((file(styles.(partial-completion))))))
+(use-package orderless
+  :config (setq completion-styles '(orderless partial-completion basic)
+		completion-category-defaults nil
+		completion-category-overrides '((file(styles.(partial-completion))))))
 
 ;; set background opacity
 (set-frame-parameter (selected-frame) 'alpha '(85 . 85))
